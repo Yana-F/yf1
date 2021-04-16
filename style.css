@@ -1,0 +1,157 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #36bbce;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+    display: block;
+}
+
+nav {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    padding: 25px 100px 25px 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.post-text {
+    font-size: 24px;
+    
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: white;
+    padding: 15px 45px 30px 45px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+}
+
+.article-but {
+    text-decoration: none;
+    background-color: #133aac;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+}
+
+.full-image {
+    margin: 100px 0px 100px 0px;
+}
+
+.social {
+    display: block;
+    width: 30px;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px 20px 45px;
+}
+
+.footer-text {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.footer-text span {
+    color: #850AE5;
+    font-weight: bolder;
+}
+.span {
+   position: fixed;
+   top:225px;
+   right: 0;
+   color: white;
+   width:100px ;
+   height: 200px;
+   background-color:#36bbce ;
+   border:dashed 5px white ; 
+   
+}
+.post {
+    position: relative;
+
+}
+.new {
+    position: absolute;
+     height: 150px;
+     width: 150px;
+     right:0 ;
+}
+.h1::before {
+content:"→";
+
+}
+.h1::after{
+content:"←";
+
+}
+.footer-textsvg::before {
+    content:url("https://cdn.icon-icons.com/icons2/1744/PNG/128/3643769-building-home-house-main-menu-start_113416.png");
+    width: 0px;
+    height: 1px;
+}
+.footer-textimg::before {
+
+    content:url("data:image/png;base64,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");
+    width: 10px;
+    height: 10px;
+}
+.article-but:hover  {
+background-color:  mediumaquamarine ;
+}
+.button:hover {
+background-color:orange ;
+}
+.post:hover {
+   text-align: center; 
+  font-weight: bolder;
+  background-color:lightseagreen;
+  color: white; 
+}
+h1:hover {
+    color: mediumaquamarine;
+}
